@@ -8,6 +8,5 @@ namespace Code_sort
 {
     internal class MainwindowHelper
     {
-        int a;
     }
 }
