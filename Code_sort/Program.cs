@@ -1,6 +1,4 @@
-﻿using Code_sort;
-
-namespace FlyElepHead
+﻿namespace Code_sort
 {
     internal static class Program
     {
