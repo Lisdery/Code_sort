@@ -15,7 +15,6 @@ namespace Code_sort
         public Mainwindow()
         {
             InitializeComponent();
-
         }
     }
 }
