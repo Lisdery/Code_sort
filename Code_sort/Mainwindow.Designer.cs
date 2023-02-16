@@ -31,6 +31,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.TabIndex = 0;
+            // 
             // Mainwindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -38,8 +45,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "Mainwindow";
             this.Text = "Mainwindow";
+            this.Load += new System.EventHandler(this.Mainwindow_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

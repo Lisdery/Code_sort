@@ -32,6 +32,8 @@ namespace Code_sort
             start_panel.Parent= this;
 
             InitPanel("Start_Panel");
+
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         public void InitPanel (string name)
@@ -40,6 +42,18 @@ namespace Code_sort
             {
                 case "Start_Panel":
                     Panel panel = scenes[name];
+
+                    panel.Size = new Size
+                    {
+                        Width = this.Width,
+                        Height = this.Height,
+                    };
+
+                    panel.Location = new Point
+                    {
+                        X = 0,
+                        Y = 0,
+                    };
 
                     Button Determine = new()
                     {
@@ -50,13 +64,21 @@ namespace Code_sort
                         },
                         Location = new Point
                         {
-                            X = (info.Window_width - info.DM_Button_width) / 2,
-                            Y = (info.Window_height - 100)
+                            X = (Width - info.DM_Button_width) / 2,
+                            Y = (Height - 100)
                         },
                         Parent = panel,
                     };
+                    MessageBox.Show($"Width:{this.Width} Height: {this.Height}");
+                    MessageBox.Show($"Width:{panel.Size.Width} Height: {panel.Size.Height}");
+                    MessageBox.Show($"Width:{Determine.Size.Width} Height: {Determine.Size.Height}");
                     break;
             }
+        }
+
+        private void Mainwindow_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
