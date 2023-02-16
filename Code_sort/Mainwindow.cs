@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using info = Code_sort.GlobalInfo;
 
 namespace Code_sort
@@ -21,8 +22,8 @@ namespace Code_sort
 
             this.Size = new Size()
             {
-                X = info.Window_width,
-                Y = info.Window_height,
+                Width = info.Window_width,
+                Height = info.Window_height
             };
             Panel start_panel = new Panel();
             scenes.Add("Start_Panel",start_panel);
@@ -44,9 +45,15 @@ namespace Code_sort
                     {
                         Size = new Size
                         {
-                            X=
+                            Width = info.DM_Button_width,
+                            Height = info.DM_Button_height
                         },
-                        Location = new Point(50, 800),
+                        Location = new Point
+                        {
+                            X = (info.Window_width - info.DM_Button_width) / 2,
+                            Y = (info.Window_height - 100)
+                        },
+                        Parent = panel,
                     };
                     break;
             }
