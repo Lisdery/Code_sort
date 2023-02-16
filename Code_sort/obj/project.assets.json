@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Code_sort\\Code_sort\\Code_sort.csproj",
+      "projectUniqueName": "E:\\Code_sort\\Code_sort\\Code_sort\\Code_sort.csproj",
       "projectName": "Code_sort",
-      "projectPath": "D:\\Code_sort\\Code_sort\\Code_sort.csproj",
+      "projectPath": "E:\\Code_sort\\Code_sort\\Code_sort\\Code_sort.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\Code_sort\\Code_sort\\obj\\",
+      "outputPath": "E:\\Code_sort\\Code_sort\\Code_sort\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
