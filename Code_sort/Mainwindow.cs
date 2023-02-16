@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using info = Code_sort.GlobalInfo;
 
 namespace Code_sort
 {
@@ -18,8 +19,11 @@ namespace Code_sort
         {
             InitializeComponent();
 
-            this.Size = new System.Drawing.Size(600, 1000);
-
+            this.Size = new Size()
+            {
+                X = info.Window_width,
+                Y = info.Window_height,
+            };
             Panel start_panel = new Panel();
             scenes.Add("Start_Panel",start_panel);
 
@@ -34,7 +38,16 @@ namespace Code_sort
             switch (name)
             {
                 case "Start_Panel":
+                    Panel panel = scenes[name];
 
+                    Button Determine = new()
+                    {
+                        Size = new Size
+                        {
+                            X=
+                        },
+                        Location = new Point(50, 800),
+                    };
                     break;
             }
         }
