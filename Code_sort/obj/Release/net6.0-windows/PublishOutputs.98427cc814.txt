@@ -1,5 +1,0 @@
-D:\Code_sort\Code_sort\bin\Release\net6.0-windows\publish\Code_sort.exe
-D:\Code_sort\Code_sort\bin\Release\net6.0-windows\publish\Code_sort.dll
-D:\Code_sort\Code_sort\bin\Release\net6.0-windows\publish\Code_sort.deps.json
-D:\Code_sort\Code_sort\bin\Release\net6.0-windows\publish\Code_sort.runtimeconfig.json
-D:\Code_sort\Code_sort\bin\Release\net6.0-windows\publish\Code_sort.pdb
