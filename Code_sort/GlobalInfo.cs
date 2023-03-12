@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Code_sort
 {
-    internal class GlobalInfo
+    public class GlobalInfo
     {
         public static int Window_width = 600;
         public static int Window_height = 400;
