@@ -55,6 +55,7 @@ namespace Code_sort
                     panel.Dock = DockStyle.Fill;
                     panel.AutoSize = false;
                     panel.BackColor = Color.White;
+
                     Button Determine_Button = new()
                     {
                         Name = "DM_button",
