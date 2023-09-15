@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
-using info=Code_sort.GlobalInfo;
+using info = Code_sort.GlobalInfo;
 
 namespace Code_sort
 {
@@ -30,7 +30,7 @@ namespace Code_sort
             scenes.Add("Start_Panel", start_panel);
 
             scenes["Start_Panel"].Parent = this;
-            
+
             Init_Panel("Start_Panel");
 
         }
@@ -41,6 +41,10 @@ namespace Code_sort
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Padding = new Padding(0, 0, 0, 0);
             Margin = new Padding(0, 0, 0, 0);
+        }
+        public void DM_click(TextBox Input_Box)
+        {
+            MessageBox.Show(Input_Box.Text);
         }
         public void Init_Panel(string name)
         {
@@ -56,6 +60,26 @@ namespace Code_sort
                     panel.AutoSize = false;
                     panel.BackColor = Color.White;
 
+
+                    TextBox Input_Box = new()
+                    {
+                        Name = "I_box",
+                        Size = new Size()
+                        {
+                            Height = info.I_Box_height,
+                            Width = info.I_Box_width,
+                        },
+                        Location = new Point()
+                        {
+                            X = (info.Window_width - info.I_Box_width) / 2,
+                            Y = (info.Window_height - info.I_Box_height) / 2,
+                        },
+                        Parent = panel,
+                        Visible = true,
+                        Padding = new Padding(0, 0, 0, 0),
+                        Margin = new Padding(0, 0, 0, 0),
+                    };
+
                     Button Determine_Button = new()
                     {
                         Name = "DM_button",
@@ -68,7 +92,7 @@ namespace Code_sort
                         Location = new Point()
                         {
                             X = (info.Window_width - info.DM_Button_width) / 2,
-                            Y = (info.Window_height - info.DM_Button_height) / 2+100
+                            Y = (info.Window_height - info.DM_Button_height) / 2 + 100
                         },
                         Parent = panel,
                         Visible = true,
@@ -77,14 +101,7 @@ namespace Code_sort
                         AutoSize = false,
                         TextAlign = ContentAlignment.MiddleCenter,
                     };
-                    MessageBox.Show($"doka {Height}");
-
-                    MessageBox.Show($"doka {Width}");
-
-                    MessageBox.Show($"{Determine_Button.Location.X}");
-
-                    MessageBox.Show($"{Determine_Button.Location.Y}");
-
+                    DM_click(Input_Box);
                     break;
             }
         }

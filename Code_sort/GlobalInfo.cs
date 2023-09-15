@@ -12,5 +12,7 @@ namespace Code_sort
         public static int Window_height = 400;
         public static int DM_Button_width = 300;
         public static int DM_Button_height = 50;
+        public static int I_Box_width = 300;
+        public static int I_Box_height = 50;
     }
 }
