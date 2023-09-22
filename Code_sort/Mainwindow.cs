@@ -42,10 +42,12 @@ namespace Code_sort
             Padding = new Padding(0, 0, 0, 0);
             Margin = new Padding(0, 0, 0, 0);
         }
-        public void DM_click(TextBox Input_Box)
+
+        public void TextBox_TextChanged(object sender, EventArgs e)
         {
-            MessageBox.Show(Input_Box.Text);
+            Console.WriteLine("hello\n");
         }
+
         public void Init_Panel(string name)
         {
             switch (name)
@@ -78,9 +80,12 @@ namespace Code_sort
                         Visible = true,
                         Padding = new Padding(0, 0, 0, 0),
                         Margin = new Padding(0, 0, 0, 0),
+
                     };
 
-                    Button Determine_Button = new()
+                    Input_Box.TextChanged += TextBox_TextChanged;
+
+                    /*Button Determine_Button = new()
                     {
                         Name = "DM_button",
                         Text = "Search!",
@@ -100,8 +105,8 @@ namespace Code_sort
                         Margin = new Padding(0, 0, 0, 0),
                         AutoSize = false,
                         TextAlign = ContentAlignment.MiddleCenter,
-                    };
-                    
+                    };*/
+
                     break;
             }
         }
