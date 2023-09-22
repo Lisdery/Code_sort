@@ -101,7 +101,7 @@ namespace Code_sort
                         AutoSize = false,
                         TextAlign = ContentAlignment.MiddleCenter,
                     };
-                    DM_click(Input_Box);
+                    
                     break;
             }
         }
